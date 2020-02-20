@@ -1,0 +1,12 @@
+<h1>COCKTAIL HEAVEN</h1>
+<% @cocktails.each do |cocktail| %>
+  <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+<% end %>
+
+
+<%= link_to 'Add New Cocktail', new_cocktail_path  %>
+<%= link_to 'Search Cocktails', new_cocktail_path  %>
+<!--
+      <div class="btn btn-primary text-white">
+        <%= link_to "Add a new restaurant", new_restaurant_path%>
+      </div> -->
